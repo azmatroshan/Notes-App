@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp"
+    android:layout_height="match_parent"
+    tools:context=".fragments.add.AddFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/topic"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/your_note"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/add_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/teal_200"
+                android:text="@string/add"
+                android:textColor="#5E35B1" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
