@@ -10,8 +10,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.notesapp.R
-import com.example.notesapp.data.User
-import com.example.notesapp.data.UserViewModel
+import com.example.notesapp.model.User
+import com.example.notesapp.viewmodel.UserViewModel
 
 
 class AddFragment : Fragment() {
@@ -51,8 +51,11 @@ class AddFragment : Fragment() {
             findNavController().navigate(R.id.action_addFragment_to_listFragment)
             Toast.makeText(requireContext(),"Done",Toast.LENGTH_SHORT).show()
         }
+        else if(topic.isEmpty()){
+            Toast.makeText(requireContext(),"please, provide topic name", Toast.LENGTH_SHORT).show()
+        }
         else{
-            Toast.makeText(requireContext(),"input is not provided",Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),"please, enter your note", Toast.LENGTH_SHORT).show()
         }
     }
 

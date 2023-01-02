@@ -9,6 +9,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
         android:layout_width="match_parent"
+        android:paddingTop="12dp"
+        android:paddingBottom="20dp"
         android:layout_height="match_parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -21,7 +23,7 @@
         android:contentDescription="@string/to_add_a_note"
         android:focusable="true"
         android:src="@drawable/ic_add"
-        android:tint="@android:color/white"
+        android:backgroundTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="ImageContrastCheck" />

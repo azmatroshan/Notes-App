@@ -2,12 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:gravity="center"
-    android:padding="25dp"
-    android:background="#C5C5C5"
     android:layout_height="match_parent"
-    tools:context=".fragments.add.AddFragment">
+    android:padding="25dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.update.UpdateFragment">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -16,9 +14,9 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:backgroundTint="#C5CFCE"
         app:cardCornerRadius="10dp"
         android:layout_marginEnd="20dp"
+        app:cardElevation="4dp"
         android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +25,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/topic"
+                android:id="@+id/topic_update"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
@@ -37,7 +35,7 @@
                 android:minHeight="48dp" />
 
             <EditText
-                android:id="@+id/notes"
+                android:id="@+id/notes_update"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -48,15 +46,14 @@
                 android:minHeight="48dp" />
 
             <Button
-                android:id="@+id/add_btn"
+                android:id="@+id/update_btn"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="8dp"
                 android:backgroundTint="@color/teal_200"
-                android:text="@string/add"
-                android:textSize="18sp" />
+                android:text="@string/update"
+                android:textSize="18sp"/>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

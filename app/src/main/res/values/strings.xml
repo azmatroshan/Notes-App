@@ -6,6 +6,10 @@
     <string name="topic">Topic</string>
     <string name="your_note">Your Note</string>
     <string name="add">Add to Notes</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
     <string name="description">Description</string>
     <string name="topic_name">Topic Name</string>
+    <string name="delete_all">delete all</string>
+    <string name="share">share</string>
 </resources>
