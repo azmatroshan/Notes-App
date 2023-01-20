@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="25dp"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.update.UpdateFragment">
 
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_margin="16dp"
+            android:layout_margin="12dp"
             android:orientation="vertical"
             android:layout_height="wrap_content">
 
@@ -32,18 +32,18 @@
                 android:ems="10"
                 android:hint="@string/topic"
                 android:inputType="textPersonName"
-                android:minHeight="48dp" />
+                 />
 
             <EditText
                 android:id="@+id/notes_update"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_marginTop="12dp"
                 android:autofillHints=""
-                android:ems="10"
+                android:gravity="top"
                 android:hint="@string/your_note"
-                android:inputType="textPersonName"
-                android:minHeight="48dp" />
+                android:inputType="textMultiLine"
+                />
 
             <Button
                 android:id="@+id/update_btn"

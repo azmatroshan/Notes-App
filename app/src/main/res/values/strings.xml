@@ -12,4 +12,5 @@
     <string name="topic_name">Topic Name</string>
     <string name="delete_all">delete all</string>
     <string name="share">share</string>
+    <string name="search">Search</string>
 </resources>
